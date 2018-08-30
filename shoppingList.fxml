@@ -7,26 +7,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopping.ShoppingList">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopping.ShoppingList">
    <children>
-      <Label layoutX="56.0" layoutY="19.0" text="Mi Lista">
+      <Label fx:id="myList" layoutX="56.0" layoutY="19.0" text="Mi Lista">
          <font>
             <Font size="48.0" />
          </font>
       </Label>
       <Button layoutX="14.0" layoutY="35.0" mnemonicParsing="false" text="&lt;" />
       <Button layoutX="399.0" layoutY="35.0" mnemonicParsing="false" text="+ Articulo" />
-      <TableView layoutX="42.0" layoutY="104.0" prefHeight="400.0" prefWidth="435.0">
+      <TableView layoutX="42.0" layoutY="104.0" prefHeight="400.0" prefWidth="506.0">
         <columns>
-          <TableColumn prefWidth="114.0" text="Articulo" />
-          <TableColumn prefWidth="57.0" text="Cantidad" />
-            <TableColumn prefWidth="77.0" text="Unitario" />
-            <TableColumn prefWidth="75.0" text="Total" />
-            <TableColumn prefWidth="111.0" text="Estado" />
+          <TableColumn prefWidth="125.0" text="Articulo" />
+          <TableColumn prefWidth="90.0" text="Cantidad" />
+            <TableColumn prefWidth="86.0" text="Unitario" />
+            <TableColumn prefWidth="84.0" text="Total" />
+            <TableColumn prefWidth="120.0" text="Estado" />
         </columns>
       </TableView>
       <Label layoutX="42.0" layoutY="524.0" text="Marcar como:" />
-      <Button layoutX="260.0" layoutY="528.0" mnemonicParsing="false" text="Pendiente" />
-      <Button layoutX="340.0" layoutY="528.0" mnemonicParsing="false" text="Marcar Compreado  " />
+      <Button layoutX="332.0" layoutY="528.0" mnemonicParsing="false" text="Pendiente" />
+      <Button layoutX="412.0" layoutY="528.0" mnemonicParsing="false" text="Marcar Comprado  " />
    </children>
 </AnchorPane>

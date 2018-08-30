@@ -4,38 +4,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="TOP_LEFT" contentDisplay="TOP" prefWidth="400.0" text="Label" GridPane.rowIndex="1" />
-      <TableView prefHeight="300.0" prefWidth="500.0" GridPane.rowIndex="4">
+      <Label layoutX="14.0" layoutY="43.0" text="Mis Listas: ">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <TableView layoutX="14.0" layoutY="115.0" prefHeight="200.0" prefWidth="573.0">
         <columns>
-          <TableColumn prefWidth="175.0" text="Nombre" />
-          <TableColumn maxWidth="400.0" prefWidth="125.0" text="Fecha" />
-            <TableColumn maxWidth="400.0" prefWidth="100.0" text="Pendientes" />
-            <TableColumn maxWidth="400.0" prefWidth="100.0" text="Estimado" />
+          <TableColumn prefWidth="198.0" text="Nombre" />
+          <TableColumn prefWidth="137.0" text="Fecha" />
+            <TableColumn prefWidth="120.0" text="Pendientes" />
+            <TableColumn prefWidth="117.0" text="Estimado" />
         </columns>
       </TableView>
-      <Label prefHeight="50.0" prefWidth="200.0" text="Mis Listas:" GridPane.rowIndex="2">
-         <font>
-            <Font size="40.0" />
-         </font>
-      </Label>
-      <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Eliminar " GridPane.rowIndex="5" />
+      <Button fx:id="newListButton" layoutX="477.0" layoutY="73.0" mnemonicParsing="false" text="Nueva Lista" />
+      <Button fx:id="eliminateButton" layoutX="493.0" layoutY="331.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="editButton" layoutX="423.0" layoutY="331.0" mnemonicParsing="false" text="Editar" />
    </children>
-</GridPane>
+</AnchorPane>
