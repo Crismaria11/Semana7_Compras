@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.cell.PropertyValueFactory;
 import sun.tools.jconsole.Tab;
 
+import javax.swing.*;
 import javax.swing.table.TableColumn;
 import javax.swing.text.TabableView;
 import javax.swing.text.TableView;
@@ -47,7 +48,16 @@ public class ShoppingListController {
         );
         quantityCol.setCellValueProperty(
             new PropertyValueFactory<Items,Integer>("quantity")
-        )
+        );
+        priceCol.setCellValueProperty(
+                new PropertyValueFactory<Items, Float>("price")
+        );
+        itemsTotalCol.setCellValueProperty(
+                new PropertyValueFactory<Items, Float>("total")
+        );
+        checkCol.setCellValueProperty(
+                new PropertyValueFactory<Items, String>("waiting")
+        );
 }
 
 }

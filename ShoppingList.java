@@ -15,7 +15,7 @@ public class ShoppingList {
     ObservableList<Items> items = FXCollections.observableArrayList();
 
     public ShoppingList(String nombre){
-        
+
     }
 
 
